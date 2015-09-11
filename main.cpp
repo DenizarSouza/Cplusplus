@@ -7,7 +7,6 @@ using namespace std;
 typedef vector <int> vetor;
 typedef vector <vetor> matriz;
 
-
 matriz multiplicaMatriz(const matriz &a, const matriz &b)
 {
     int i, j;
@@ -27,7 +26,6 @@ matriz multiplicaMatriz(const matriz &a, const matriz &b)
             }
         }
     }
-
     return c;
 }
 
@@ -42,23 +40,20 @@ matriz digitaMatriz()
     cout << "Informe o numero de colunas: ";
     cin >> coluna;
     m.resize(linha);
-    for(int i=0; i<m.size(); i++)
+    for(int i = 0; i < m.size(); i++)
     {
         m[i].resize(coluna);
         return m;
     }
-
 }
 
 int main()
 {
-
     matriz a;
     a = digitaMatriz();
     matriz b;
     b = digitaMatriz();
-
-     multiplicaMatriz(a, b);
+    multiplicaMatriz(a, b);
 
     return 0;
 }
