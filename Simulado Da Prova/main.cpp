@@ -15,7 +15,7 @@ vetor EntradaDados()
 
     for (int i = 0; i < n; i++)
     {
-        cout<<"Entre com um numero: ";
+        cout << "Entre com um numero: ";
         cin >> nro;
         v.push_back(nro);
     }
